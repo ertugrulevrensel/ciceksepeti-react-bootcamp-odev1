@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÇiçekSepeti React Bootcamp - Ödev-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body class="widht90">
+    <header>
+        <div class="d-flex">
+            <div class="d-flex align-center full-w space-between">
+                <img class="site-logo" src="https://cdn03.ciceksepeti.com/Themes/Ciceksepeti/Assets/images/logo-new-ciceksepeti.png?v=3.1.1.34916" alt="">
+                <div class="searchBar">
+                    <input id="input" class="full-w d-flex" placeholder="Search Here"><i class="fas fa-search"></i></input>
+                    <button class="c-pointer" onclick="search()">Search</button>
+                </div>
+                <div class="profile d-flex">
+                    <img src="assets/profile.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="d-block full-h ">
+        <div class="d-flex">
+            <div class="d-flex flex-d-col">
+                <div id="formAction" class="d-flex">
+                    <p id="formButton" class="formText d-flex align-center justify-center c-pointer full-w">Form</p>
+                    <div id="forms" class="form">
+                        <div>
+                            <label>First name:</label><br> <br>
+                            <input type="text" id="fname" name="fname" value=""><br> <br>
+                            <label>Last name:</label><br> <br>
+                            <input type="text" id="lname" name="lname" value=""> <br> <br>
+                            <label>Phone:</label><br> <br>
+                            <input type="text" id="phone" name="phone" value=""> <br> <br>
+                            <label>Address:</label><br> <br>
+                            <input type="text" id="address" name="address" value=""> <br>
+                            <p>Please select your favorite Web language:</p>
+                            <input class="radioInput" type="radio" name="fav_language" value="HTML" checked="checked">
+                            <label>HTML</label><br>
+                            <input class="radioInput" type="radio" name="fav_language" value="CSS">
+                            <label>CSS</label><br>
+                            <input class="radioInput" type="radio" name="fav_language" value="JavaScript">
+                            <label>JavaScript</label><br>
+                            
+                            <br>  
+                            
+                            <p>Please select your age:</p>
+                            <input class="radioInput" type="radio" id="age1" name="age" value="0-30" checked="checked">
+                            <label for="age1">0 - 30</label><br>
+                            <input class="radioInput" type="radio" id="age2" name="age" value="31-60">
+                            <label for="age2">31 - 60</label><br>  
+                            <input class="radioInput" type="radio" id="age3" name="age" value="61-100">
+                            <label for="age3">61 - 100</label><br><br>
+                            <button class="c-pointer" id="formSubmit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardAction" class="cards d-flex">
+                    <p id="cardActions" class="formText d-flex align-center justify-center c-pointer">Cards</p>
+                    <div id="outputs" class="rightContentGrid">
+                            
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>

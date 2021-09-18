@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: gainsboro;
+}
+header > div{
+    height: 70px;
+    background-color: gray;
+}
+.d-flex{
+    display: flex !important
+}
+.d-block{
+    display: block;
+}
+.d-grid{
+    display: grid !important
+}
+.d-none{
+    display: none;
+}
+.widht90{
+    width: 90%;
+    margin: 0 auto;
+}
+.full-w{
+    width: 100%;
+}
+.full-h{
+    height: 100%;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.flex-d-col{
+    flex-direction: column;
+}
+.site-logo{
+margin-left: 10px;
+}
+.searchBar{
+    display: flex;
+    height: 30px;
+    width: 400px;
+    position: relative;
+}
+.searchBar > input {
+    padding-left: 20px;
+    border-radius: 4px;
+}
+.fa-search{
+    position: absolute;
+    height: 100%;
+    margin-left: 3px;
+    align-items: center;
+    display: flex !important
+}
+
+.profile > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.formText{
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.form {
+    margin: 10px 0 0 250px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+}
+button {
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 3px;
+}
+/* #formAction:hover > .form{
+    display: flex;
+} */
+/* #cardAction:hover > .rightContentGrid{
+    display: grid;
+} */
+.rightContentGrid{
+    display: none;
+    position: absolute;
+    margin: -75px 0 0 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gridImg{
+    height: 50px;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+}
+.gridCell{
+    width: 300px;
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.gridCell > div{
+    width: 100%;
+    margin-top: 10px;
+    margin-top: auto;
+}
+#forms{
+    animation-name: in;
+    animation-duration: 0.5s;
+}
+#formButton{
+    transition: all ease 0.3s;
+}
+#formButton:hover{
+    background-color: rgb(87, 85, 85);
+}
+#cardActions{
+    transition: all ease 0.3s;
+}
+#cardActions:hover{
+    background-color: rgb(87, 85, 85);
+}
+
+#input{
+    outline: none;
+    border: 3px solid rgb(87, 85, 85);
+    background-color: rgb(192, 192, 192);
+    transition: all ease 0.3s;
+}
+#input:focus{
+    border-color: lightseagreen;
+    background-color: white;
+}
+#outputs{
+    animation-name: in;
+    animation-duration: 0.5s;
+}
+@keyframes in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.gridCell > div > a{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    min-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+}
+.gridCell > div > a > p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
